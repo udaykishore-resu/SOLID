@@ -4,7 +4,7 @@ SOLID is a set of OOP principles to avoid dependencies between code components. 
 
 The main problems solid principles resolves are:
 
-_Fragility_: Change in one part breaks the work of other parts.
+#L1 _Fragility_: Change in one part breaks the work of other parts.
 
 _Immobility_: code cannot be reused outside of its context.
 
@@ -17,7 +17,7 @@ Each class should have one goal, and all its methods should work to achieve that
 
 Lets take below User class a example, the User class job is to give information about the user like name, email, subscription details.
 
-[Single responsibility](Java/SOLID/User.java)
+[Single responsibility](../User.java)
 
 If you look at the above example, the hasExtraAccess method checks if the User has extra access to the content based on the subscription type.
 But its look like User class has two roles; one is _providing user information_ and the second one is _content access based on subscription_.
