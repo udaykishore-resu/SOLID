@@ -23,7 +23,8 @@ If you look at the above example, the hasExtraAccess method checks if the User h
 But its look like User class has two roles; one is _providing user information_ and the second one is _content access based on subscription_.
 This is against the Single Responsibility Principle.
 
-Lets remove hasExtraAccess method from User class, write in a different class.
+Lets remove hasExtraAccess method from User class, write it in a different class.
+
 
 
 
