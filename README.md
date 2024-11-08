@@ -17,7 +17,7 @@ Each class should have one goal, and all its methods should work to achieve that
 
 Lets take below User class a example, the User class job is to give information about the user like name, email, subscription details.
 
-[Single responsibility](SOLID/User.java)
+[Single responsibility](Java/SOLID/User.java)
 
 If you look at the above example, the hasExtraAccess method checks if the User has extra access to the content based on the subscription type.
 But its look like User class has two roles; one is _providing user information_ and the second one is _content access based on subscription_.
