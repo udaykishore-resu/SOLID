@@ -17,7 +17,7 @@ Each class should have one goal, and all its methods should work to achieve that
 
 Lets take below User class a example, the User class job is to give information about the user like name, email, subscription details.
 
-[Non Single responsibility](https://github.com/udaykishore-resu/Java/blob/main/SOLID/SingleResponsibility/User.java)
+[Non Single responsibility](https://github.com/udaykishore-resu/Java/blob/main/SOLID/SRP/User.java)
 
 If you look at the above example, the hasExtraAccess method checks if the User has extra access to the content based on the subscription type.
 But its look like User class has two roles; one is _providing user information_ and the second one is _content access based on subscription_.
@@ -25,7 +25,21 @@ This is against the Single Responsibility Principle.
 
 Lets remove hasExtraAccess method from User class, write it in a different class as below.
 
-[Single Responsibility](https://github.com/udaykishore-resu/Java/blob/main/SOLID/SingleResponsibility/OttSubscription.java)
+[Single Responsibility](https://github.com/udaykishore-resu/Java/blob/main/SOLID/SRP/OttSubscription.java)
+
+__Open closed principle__
+OCP states that the software entities are open for extensions but should be closed for modification.
+Which means you should be able to add the new functionality with out altering the existing functionality because adding a new functionality by modifying existing code leads to bugs and hard to maintain.
+
+For an example consider the calculateInterest method of BankAccount class.
+
+[Non OpenClosedPrinciple](https://github.com/udaykishore-resu/Java/blob/main/SOLID/OCP/BankAccount.java)
+
+There is a problem with the calculateInterest method. What if there is a new account type introduced with new interest requirement, We have to add another if condition in the calculateInterest method. It violates OCP. 
+The easiest way to fix this problem is creating a common interface for all account types and implement it for every account types.
+
+
+
 
 
 
