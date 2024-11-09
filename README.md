@@ -17,13 +17,15 @@ Each class should have one goal, and all its methods should work to achieve that
 
 Lets take below User class a example, the User class job is to give information about the user like name, email, subscription details.
 
-[Single responsibility](Java/blob/main/SOLID/SingleResponsibility/User.java)
+[Non Single responsibility](https://github.com/udaykishore-resu/Java/blob/main/SOLID/SingleResponsibility/User.java)
 
 If you look at the above example, the hasExtraAccess method checks if the User has extra access to the content based on the subscription type.
 But its look like User class has two roles; one is _providing user information_ and the second one is _content access based on subscription_.
 This is against the Single Responsibility Principle.
 
-Lets remove hasExtraAccess method from User class, write it in a different class.
+Lets remove hasExtraAccess method from User class, write it in a different class as below.
+
+[Single Responsibility](https://github.com/udaykishore-resu/Java/blob/main/SOLID/SingleResponsibility/OttSubscription.java)
 
 
 
