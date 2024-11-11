@@ -38,6 +38,17 @@ For an example consider the calculateInterest method of BankAccount class.
 There is a problem with the calculateInterest method. What if there is a new account type introduced with new interest requirement, We have to add another if condition in the calculateInterest method. It violates OCP. 
 The easiest way to fix this problem is creating a common interface for all account types and implement it for every account types.
 
+[OpenClosedPrinciple]()
+
+__Liskov Substitution Principle__
+
+LSP states that objects of a derived class should be able to replace objects of the base class without affecting the correctness of the program.
+
+This principle ensures that inheritance relationships are well-designed and that the derived class adheres to the contract of the base class.
+
+[Problem]() This violates LSP because a Square cannot be substituted for a Rectangle without changing the program's behavior. this is resolved and demostrated the [Solution]().
+
+
 
 
 
